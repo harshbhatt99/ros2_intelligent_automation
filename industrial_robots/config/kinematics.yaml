@@ -1,0 +1,17 @@
+panda_arm:
+  kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin
+  kinematics_solver_search_resolution: 0.005
+  kinematics_solver_timeout: 0.05
+
+# kdl_kinematics_plugin/KDLKinematicsPlugin. 
+# This plugin is likely a Kinematics Dynamics Library (KDL) based solver for computing inverse kinematics solutions.
+
+# kinematics_solver_search_resolution:
+# Sets the search resolution for the kinematics solver. 
+# In the context of inverse kinematics, this might represent the precision or granularity with which the solver searches for a ...
+# ... valid joint configuration that satisfies a given end-effector pose. A smaller value generally implies a more fine-grained search.
+
+# kinematics_solver_timeout:
+# Specifies the timeout for the kinematics solver. If the solver takes longer than this timeout to find a solution,...
+# ... it might terminate without providing a result. The value is set to 0.05 seconds, indicating a relatively short time limit for solving ...
+# ... the inverse kinematics problem.
